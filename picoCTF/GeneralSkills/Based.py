@@ -40,11 +40,12 @@ def solve_base_16(p):
 def main():
     context(arch="i386", os="linux")
 
-    p = remote("2019shell1.picoctf.com", 31615)
+    p = remote("2019shell1.picoctf.com", 44303)
 
     solve_base_2(p)
     solve_base_8(p)
     solve_base_16(p)
+    print("flag is")
     p.interactive()
 
 if __name__ == "__main__":
